@@ -26,4 +26,7 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
+;;disable erasure key prompts for a Help command
+(normal-erase-is-backspace-mode 1)
+
 (provide 'init-custom)
