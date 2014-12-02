@@ -1,4 +1,4 @@
-;; this file bootstraps the configuration for GNU Emacs 23.1.1  and greeater
+;; this file bootstraps the configuration for GNU Emacs 23.1.1  and later
 
 (add-to-list 'load-path user-emacs-directory)
 (setq site-lisp-dir (expand-file-name "site-lisp" user-emacs-directory))
