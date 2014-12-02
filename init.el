@@ -1,7 +1,10 @@
-;; this file bootstraps the configuration for GNU Emacs 23.1.1  and later
+;; this file bootstraps the configuration for GNU Emacs 21.1.1  and later
 
-(add-to-list 'load-path user-emacs-directory)
 (setq site-lisp-dir (expand-file-name "site-lisp" user-emacs-directory))
+(setq lisp-dir (expand-file-name "lisp" user-emacs-directory))
+(add-to-list 'load-path site-lisp-dir)
+(add-to-list 'load-path lisp-dir)
+
 
 ;; load configs for specific features and modes
 (require 'init-go-mode)
