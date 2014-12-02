@@ -7,6 +7,4 @@ This config improved defaults and extended support for the following languages:
 * bash
 
 ## Requirements
-* emacs 23 or greater
-* centos 6.3
-
+* GNU emacs 23.1.1 or later
