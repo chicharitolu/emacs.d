@@ -8,7 +8,7 @@
 
 ;; load configs for specific features and modes
 (require 'init-go-mode)
-
+(require 'init-yaml-mode)
 
 ;; custom config
 (require 'init-custom)
