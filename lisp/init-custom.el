@@ -29,4 +29,7 @@
 ;;disable erasure key prompts for a Help command
 (normal-erase-is-backspace-mode 1)
 
+;;indent using space 
+(setq-default indent-tabs-mode nil)
+(setq default-tab-width 2)
 (provide 'init-custom)
