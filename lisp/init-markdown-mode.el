@@ -1,4 +1,4 @@
-;; init for go-mode
+;; init for markdown-mode
 
 (setq markdown-mode-dir (expand-file-name "markdown-mode"  site-lisp-dir))
 (add-to-list 'load-path markdown-mode-dir t)
