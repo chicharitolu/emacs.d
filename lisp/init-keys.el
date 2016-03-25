@@ -1,6 +1,6 @@
 ;; indent whole buffer
 (defun indent-whole-buffer ()
-  "indent the whole buffer"
+p  "indent the whole buffer"
   (interactive)
   (save-excursion
     (indent-region (point-min) (point-max)))
@@ -10,7 +10,7 @@
 (defun other-window-backward (&optional n)
   "select the previsous window"
   (interactive "P")
-  (other-window (- (or prefix-numeric-value 1)))
+  (other-window (- (or 'prefix-numeric-value 1)))
   )
 
 ;; point to top
@@ -28,6 +28,9 @@
   )
 
 ;; global keys
-  (global-set-key [f7] 'indent-whole-buffer)
-  (global-set-key "\C-x\C-n" 'other-window)
-  (global-set-key "\C-x\C-p" 'other-window-backward)
+(global-set-key [f7] 'indent-whole-buffer)
+(global-set-key [f1] 'shell)
+(global-set-key "\C-x\C-n" 'other-window)
+(global-set-key "\C-x\C-p" 'other-window-backward)
+
+(provide 'init-keys)

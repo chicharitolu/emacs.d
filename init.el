@@ -16,6 +16,9 @@
 (require 'init-custom)
 (require 'init-locales)
 
+;;global keys
+(require 'init-keys)
+
 ;; startup as server for emacsc-lient
 (require 'server)
 (unless (server-running-p)
