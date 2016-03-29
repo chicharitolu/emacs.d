@@ -1,5 +1,5 @@
 ;; indent whole buffer
-(defun indent-whole-buffer ()
+0;95;c(defun indent-whole-buffer ()
 p  "indent the whole buffer"
   (interactive)
   (save-excursion
@@ -25,6 +25,13 @@ p  "indent the whole buffer"
   "put cursor on last visible line"
   (interactive)
   (move-to-window-line -1)
+  )
+
+;; line to top
+(defun line-to-top ()
+  "move current lint to top of window"
+  (interactive)
+  (recenter 0)
   )
 
 ;; global keys
