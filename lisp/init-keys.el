@@ -1,6 +1,6 @@
 ;; indent whole buffer
-0;95;c(defun indent-whole-buffer ()
-p  "indent the whole buffer"
+(defun indent-whole-buffer ()
+  "indent the whole buffer"
   (interactive)
   (save-excursion
     (indent-region (point-min) (point-max)))
@@ -13,12 +13,6 @@ p  "indent the whole buffer"
   (other-window (- (or 'prefix-numeric-value 1)))
   )
 
-;; point to top
-(defun point-to-top ()
-  "put cursor one top line of window"
-  (interactive)
-  (move-to-window-line 0)
-  )
 
 ;; point to buttom
 (defun point-to-buttom ()
